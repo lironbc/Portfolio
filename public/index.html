@@ -3,84 +3,128 @@
 <head>
     <meta charset="utf-8" />
     <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1" />-->
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link rel="stylesheet" type="text/css" href="/index.css" />
     <title>Liron Borwick-Cooper</title>
 </head>
 <body>
-<div id="top-frame">
+<!--Introduction-->
+<section class="centered-content">
 <!--    <a class="vertical-email" href="mailto:lborwick@ucsd.edu">lborwick@ucsd.edu</a>-->
-    <div id="main-content">
         <h1>Hello, I'm <span class="pink-txt">Liron Borwick-Cooper</span></h1>
-        <img src="/img/portrait.jpg" alt="" id="portrait">
+        <img src="/img/portrait.jpg" alt="Image of Liron" id="portrait">
         <p>
             I am a rising senior studying computer science at UC San Diego.
-            I believe that code is for everyone. That's why I write code that is
+            I put a lot of pride in my code. That's why I write code that is
             accessible, performant, and simple to understand.
         </p>
+    <div class="scroll-down"></div>
+</section>
+
+<!--About me-->
+<section id="about-me">
+    <div class="col-50" id="about-me-p">
+        <header>About Me</header>
+        <p>
+            Hello! I'm Liron, a computer science student based in San Diego, CA.
+        </p>
+        <p>
+            I enjoy creating fast and responsive software, whether that be websites,
+            applications, or anything in between. I believe that apps should run smoothly
+            regardless of device speed or network conditions. If you were able to
+            load this page on a 2g network, then I did my job right!
+        </p>
+        <p>
+            I love teaching and have spent hundreds of hours teaching
+            code as a tutor at my university and as a
+            instructor to kids at a coding summer camp.
+        </p>
+        <p>
+            I currently work at Viasat as a software engineering intern where I work on a wide
+            variety of interesting and meaningful projects on a daily basis.
+        </p>
+        <p>Here are some languages and technologies I'm proficient in:</p>
+        <table>
+            <tr>
+                <td>JavaScript</td>
+                <td>React</td>
+                <td>Bootstrap</td>
+            </tr>
+            <tr>
+                <td>Java</td>
+                <td>HTML/CSS</td>
+                <td>Firebase</td>
+            </tr>
+            <tr>
+                <td>C/C++</td>
+                <td>JQuery</td>
+                <td>Git/Github</td>
+            </tr>
+        </table>
+    </div>
+    <div class="col-50">
+        <img src="img/untitled.svg" alt="Programmer" class="disappear-on-mobile">
     </div>
 
-    <div class="section"></div>
-</div>
+</section>
 
-<div id="about-me">
-    <h3>About Me</h3>
-    <p>
-        Hello! I'm Liron, a computer science student based in San Diego, CA
-    </p>
-    <p>
-        I enjoy creating software that is fast and responsive. Whether that be websites,
-        applications, or anything in between. I believe that my code should be accessible
-        to anyone regardless of device speed or network conditions. If you were able to
-        load this page on a 2g network, then I did my job right!
-    </p>
-    <p>
-        I love to spread my knowledge about code to kids and adults alike and have
-        spent hundreds of hours teaching code as a tutor at my university and as a
-        instructor to kids at a coding summer camp.
-    </p>
-    <p>
-        I currently work at Viasat as a software engineering intern where I work on a wide
-        variety of interesting and meaningful projects on a daily basis.
-    </p>
-    <p>Here are some languages and technologies I'm proficient in:</p>
-    <table>
-        <tr>
-            <td>JavaScript</td>
-            <td>Java</td>
-            <td>C/C++</td>
-        </tr>
-        <tr>
-            <td>React</td>
-            <td>HTML/CSS</td>
-            <td>Firebase</td>
-        </tr>
-        <tr>
-            <td>Bootstrap</td>
-            <td>JQuery</td>
-            <td>Git/Github</td>
-        </tr>
+<section class="centered-content">
+    <header>Where I've Worked</header>
+    <h3>Viasat</h3>
+    <h4>June 2020 - Present</h4>
+    <ul>
+        <li>TBD! I just began working here so this section will be updated soon.</li>
+    </ul>
 
-        <trow></trow>
-    </table>
-</div>
+    <h3>UCSD</h3>
+    <h4>April 2018 - June 2019</h4>
+    <ul>
+        <li>Worked as part of a team to develop an online homework system for students.</li>
+        <li>Developed course curriculum by designing creative homework assignments.</li>
+        <li>Received 4.9/5.0 rating from 300+ students over full employment period.</li>
+    </ul>
 
-<div>
-    <h3>Where I've Worked</h3>
-    <h4>Viasat</h4>
-    <h5>June 2020 - Present</h5>
+    <h3>iD Tech</h3>
+    <h4>June 2018 - August 2018</h4>
+    <ul>
+        <li>Taught students programming fundamentals to design custom games.</li>
+        <li>Mentored junior instructors to develop teaching abilities and classroom management skills.</li>
+        <li>Received 4.8/5.0 rating from 50+ students and parents.</li>
+    </ul>
 
-    <h4>UCSD</h4>
-    <h5>April 2018 - June 2019</h5>
+</section>
 
-    <h4>iD Tech</h4>
-    <h5>June 2018 - August 2018</h5>
-</div>
+<section>
+    <header>Projects</header>
+    <h4>React Palette Picker</h4>
+    <ul>
+        <li>Created a React.js web application allowing users to create color palettes for easy copying.</li>
+        <li>Used React Router to serve multiple pages with seamless transitions.</li>
+        <li>Designed color creation form where a user can pick a color to add to a palette and give it a name.</li>
+        <li>Automatically generated shaded variants of each hue in a palette.</li>
+        <li>Palettes are saved in persistent local storage for future reference.</li>
+    </ul>
 
-<div>
-    <h3>Projects</h3>
+    <h4>Shoot The Asteroids!</h4>
+    <ul>
+        <li>Developed an arcade style game in Python where players fly a ship through space to shoot asteroids and compete to hold the high score.</li>
+        <li>Implemented high performance game engine functionality to handle collisions, movement, and create interactive GUI menus.</li>
+        <li>Used JSON to read and write high scores to persistent data.</li>
+        <li>Wrote helper scripts to autonomously generate images for animations and to crop each of these images for use in game.</li>
+    </ul>
+    <h4>IoT Temperature Tracker</h4>
+    <ul>
+        <li>Collaborated with a small team to design a low power Raspberry pi system to track temperature, humidity, and brightness to display via a web application.</li>
+        <li>Used Bootstrap and Graph.js to create a dashboard to display real time and historical data.</li>
+        <li>Designed circuit to connect Raspberry pi with sensors and wrote Python code to collect data and format it to be posted to an API.</li>
+    </ul>
+</section>
 
-</div>
+<section>
+    <header>Contact Me</header>
+
+</section>
 
 </body>
 </html>
