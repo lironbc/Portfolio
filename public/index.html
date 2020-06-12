@@ -10,8 +10,11 @@
 </head>
 <body>
 <!--Introduction-->
-<section class="centered-content">
+
+<section class="centered-content full-page">
 <!--    <a class="vertical-email" href="mailto:lborwick@ucsd.edu">lborwick@ucsd.edu</a>-->
+
+
         <h1>Hello, I'm <span class="pink-txt">Liron Borwick-Cooper</span></h1>
         <img src="/img/portrait.jpg" alt="Image of Liron" id="portrait">
         <p>
@@ -23,7 +26,7 @@
 </section>
 
 <!--About me-->
-<section id="about-me">
+<section class="two-col">
     <div class="col-50" id="about-me-p">
         <header>About Me</header>
         <p>
@@ -69,62 +72,126 @@
 
 </section>
 
-<section class="centered-content">
+<div class="tabContainer">
     <header>Where I've Worked</header>
-    <h3>Viasat</h3>
-    <h4>June 2020 - Present</h4>
-    <ul>
-        <li>TBD! I just began working here so this section will be updated soon.</li>
-    </ul>
+    <div class="buttonContainer">
+        <button onclick="showPanel(0,'#009FE3')">Viasat</button>
+        <button onclick="showPanel(1,'#FFCD00')">UC San Diego</button>
+        <button onclick="showPanel(2,'#9ac92f')">iD Tech</button>
+    </div>
+    <div class="tabPanel">
+        <h3>Software Engineering Intern <a href="https://www.viasat.com/" style="color:#009FE3">@Viasat</a></h3>
+        <h4>June 2020 - Present</h4>
+        <ul>
+            <li>TBD! I just began working here so this section will be updated soon.</li>
+        </ul>
+    </div>
+    <div class="tabPanel">
+        <h3>Tutor <a href="https://ucsd.edu/" style="color:#FFCD00">@UC San Diego</a></h3>
+        <h4>April 2018 - June 2019</h4>
+        <ul>
+            <li>Worked as part of a team to develop an online homework system for students.</li>
+            <li>Developed course curriculum by designing creative homework assignments.</li>
+            <li>Received 4.9/5.0 rating from 300+ students over full employment period.</li>
+        </ul>
+    </div>
+    <div class="tabPanel">
+        <h3>Lead Instructor <a href="https://www.idtech.com/" style="color:#9ac92f">@iD Tech</a></h3>
+        <h4>June 2018 - August 2018</h4>
+        <ul>
+            <li>Taught students programming fundamentals to design custom games.</li>
+            <li>Mentored junior instructors to develop teaching abilities and classroom management skills.</li>
+            <li>Received 4.8/5.0 rating from 50+ students and parents.</li>
+        </ul>
+    </div>
+</div>
 
-    <h3>UCSD</h3>
-    <h4>April 2018 - June 2019</h4>
-    <ul>
-        <li>Worked as part of a team to develop an online homework system for students.</li>
-        <li>Developed course curriculum by designing creative homework assignments.</li>
-        <li>Received 4.9/5.0 rating from 300+ students over full employment period.</li>
-    </ul>
+<div class="centered-title pink-txt">Projects</div>
 
-    <h3>iD Tech</h3>
-    <h4>June 2018 - August 2018</h4>
-    <ul>
-        <li>Taught students programming fundamentals to design custom games.</li>
-        <li>Mentored junior instructors to develop teaching abilities and classroom management skills.</li>
-        <li>Received 4.8/5.0 rating from 50+ students and parents.</li>
-    </ul>
+<section class="two-col">
 
+    <div class="col-50">
+        <h2 class="pink-txt">React Palette Picker</h2>
+        <ul>
+            <li>Created a React.js web application allowing users to create color palettes for easy copying.</li>
+            <li>Used React Router to serve multiple pages with seamless transitions.</li>
+            <li>Designed color creation form where a user can pick a color to add to a palette and give it a name.</li>
+            <li>Automatically generated shaded variants of each hue in a palette.</li>
+            <li>Palettes are saved in persistent local storage for future reference.</li>
+        </ul>
+        <a href="https://github.com/lironbc/React-Palette-Picker">Github link</a>
+        <br>
+        <a href="https://lironbc.github.io/React-Palette-Picker/#/">Live demo link</a>
+
+        <!--        <a href=""></a>-->
+    </div>
+    <div class="col-50">
+        <img id="palette-picker-svg" src="img/default-min.svg" data-src="img/palette-picker-sm-min.png" alt="React Palette Picker">
+    </div>
 </section>
-
-<section>
-    <header>Projects</header>
-    <h4>React Palette Picker</h4>
-    <ul>
-        <li>Created a React.js web application allowing users to create color palettes for easy copying.</li>
-        <li>Used React Router to serve multiple pages with seamless transitions.</li>
-        <li>Designed color creation form where a user can pick a color to add to a palette and give it a name.</li>
-        <li>Automatically generated shaded variants of each hue in a palette.</li>
-        <li>Palettes are saved in persistent local storage for future reference.</li>
-    </ul>
-
-    <h4>Shoot The Asteroids!</h4>
-    <ul>
-        <li>Developed an arcade style game in Python where players fly a ship through space to shoot asteroids and compete to hold the high score.</li>
-        <li>Implemented high performance game engine functionality to handle collisions, movement, and create interactive GUI menus.</li>
-        <li>Used JSON to read and write high scores to persistent data.</li>
-        <li>Wrote helper scripts to autonomously generate images for animations and to crop each of these images for use in game.</li>
-    </ul>
-    <h4>IoT Temperature Tracker</h4>
-    <ul>
-        <li>Collaborated with a small team to design a low power Raspberry pi system to track temperature, humidity, and brightness to display via a web application.</li>
-        <li>Used Bootstrap and Graph.js to create a dashboard to display real time and historical data.</li>
-        <li>Designed circuit to connect Raspberry pi with sensors and wrote Python code to collect data and format it to be posted to an API.</li>
-    </ul>
+<section class="two-col">
+    <div class="col-50">
+        <h2 class="pink-txt">Shoot The Asteroids!</h2>
+        <ul id="asteroid-txt">
+            <li>Developed an arcade style game in Python where players fly a ship through space to shoot asteroids and compete to hold the high score.</li>
+            <li>Implemented high performance game engine functionality to handle collisions, movement, and create interactive GUI menus.</li>
+            <li>Used JSON to read and write high scores to persistent data.</li>
+            <li>Wrote helper scripts to autonomously generate images for animations and to crop each of these images for use in game.</li>
+        </ul>
+        <a href="https://github.com/lironbc/Shoot-the-Asteroids-">Github link</a>
+    </div>
+    <div class="col-50">
+        <img id="shoot-asteroids-svg" src="img/default-min.svg" data-src="img/shoot-the-asteroids-sm-min.png" alt="Shoot the asteroids">
+    </div>
 </section>
+<section class="two-col">
+    <div class="col-50">
+        <h2 class="pink-txt">IoT Temperature Tracker</h2>
+        <ul>
+            <li>Collaborated with a small team to design a low power Raspberry pi system to track temperature, humidity, and brightness to display via a web application.</li>
+            <li>Used Bootstrap and Graph.js to create a dashboard to display real time and historical data.</li>
+            <li>Designed circuit to connect Raspberry pi with sensors and wrote Python code to collect data and format it to be posted to an API.</li>
+        </ul>
+        <a href="https://github.com/lironbc/IoT-Temperature-Tracker">Github link</a>
+    </div>
 
-<section>
+    <div class="col-50">
+        <img id="iot-svg" src="img/default-min.svg" data-src="img/iot-temp-tracker-sm-min.png" alt="Internet of things temperature tracker">
+    </div>
+</section>
+<!--        <img src="img/palette-picker-sm-min.png" alt="React Palette Picker">-->
+
+
+<!--        <img src="img/shoot-the-asteroids-sm-min.png" alt="Shoot the asteroids">-->
+
+<!--        <div class="small-svg">-->
+<!--        <img class="small-svg" src="img/default-min.svg" data-src="img/iot-temp-tracker-sm-min.png" alt="Internet of things temperature tracker">-->
+
+<!--        </div>-->
+<!--        <img src="img/iot-temp-tracker-sm-min.png" alt="Internet of things temperature tracker">-->
+
+
+
+
+<section class="centered-content">
     <header>Contact Me</header>
+    <div class="icon-row">
+        <img src="img/github-sm-white.svg" alt="github link">
+        <img src="img/email-white.svg" alt="email link">
+        <img src="img/linkedin-white.svg" alt="linkedin link">
+    </div>
+
 
 </section>
-
+<script src="tabs.js"></script>
+<script>
+    function init() {
+        var imgDefer = document.getElementsByTagName('img');
+        for (var i=0; i<imgDefer.length; i++) {
+            if(imgDefer[i].getAttribute('data-src')) {
+                imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
+            } } }
+    window.onload = init;
+</script>
 </body>
 </html>

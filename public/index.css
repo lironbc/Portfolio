@@ -35,8 +35,10 @@ td {
 
 ul {
     margin: 0.75em 0;
-    padding: 0 1em;
-    list-style: none;
+    list-style: none outside none;
+}
+li {
+    text-align: left;
 }
 
 li:before, td:before {
@@ -80,24 +82,55 @@ li:before, td:before {
     max-width: 41rem;
     margin: auto;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
-    line-height: 1.7rem;
+    font-size: 1.8rem;
+    line-height: 2rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     padding-top: 1rem;
     color: #e6f1ff;
     text-align: center;
 }
-section {
+
+.full-page {
     min-height: 100vh;
 }
+.icon-row img {
+    fill: #fff;
+}
 
-#about-me {
+.two-col {
     padding: 0 150px;
-    margin: 0;
+    margin: 40px 0;
     display: flex;
     font-size: 14pt;
     text-align: center;
+}
+
+#asteroid-txt li {
+    font-size: 1.3rem;
+    line-height: 30px;
+}
+
+.centered-title {
+    width: 100%;
+    font-size: 32pt;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#shoot-asteroids-svg {
+    width: 400px;
+    height: 501px;
+}
+
+#iot-svg {
+    width: 400px;
+    height: 225px;
+}
+
+#palette-picker-svg {
+    width: 400px;
+    height: 225px;
 }
 
 #portrait {
@@ -108,6 +141,45 @@ section {
 
 .pink-txt {
     color: #e31b6d;
+}
+
+.tabContainer {
+    margin: 30px auto;
+    width: 80%;
+    /*margin: auto;*/
+    height: 400px;
+}
+
+.tabContainer .buttonContainer {
+    height: 15%;
+}
+
+.tabContainer .buttonContainer button {
+    width: 33.33%;
+    height: 100%;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    background-color: #eee;
+}
+
+.tabContainer .buttonContainer button:hover {
+    background-color: #d7d4d4;
+}
+
+.tabContainer .tabPanel {
+    height: 85%;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 22px;
+    display: none;
 }
 
 .vertical-email {
