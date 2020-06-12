@@ -1,7 +1,13 @@
+function init() {
+    var imgDefer = document.getElementsByTagName('img');
+    for (var i=0; i<imgDefer.length; i++) {
+        if(imgDefer[i].getAttribute('data-src')) {
+            imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
+        } } }
+window.onload = init;
 var tabButtons = document.querySelectorAll(".tabContainer .buttonContainer button");
 var tabPanels = document.querySelectorAll(".tabContainer .tabPanel");
 
-console.log(tabPanels);
 function showPanel(panelIdx, colorCode) {
     tabButtons.forEach(function(node) {
         node.style.backgroundColor="#0a192f";
